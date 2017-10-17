@@ -1,7 +1,15 @@
 <?php
+/**
+* dataStructureManipulatorTest is the test suite for the dataStructureManipulator class
+*
+*  
+* @package  dataStructureManipulator
+* @author   Antonio Farina <ant.farina **AT** gmail.com>
+* @version  $Revision: 1.0 $
+* @access   public
+*/
+
 namespace dataStructureManipulator\Test;
-
-
 use \dataStructureManipulator\dataStructureManipulator;
 
 class dataStructureManipulatorTest extends \PHPUnit_Framework_TestCase
