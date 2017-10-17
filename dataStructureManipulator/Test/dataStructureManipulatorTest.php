@@ -1,7 +1,6 @@
 <?php
-
 namespace dataStructureManipulator\Test;
-require_once "../dataStructureManipulator.php";
+
 
 use \dataStructureManipulator\dataStructureManipulator;
 
