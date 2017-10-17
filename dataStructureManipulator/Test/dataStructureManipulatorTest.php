@@ -4,8 +4,11 @@
 *
 *  
 * @package  dataStructureManipulator
-* @author   Antonio Farina <ant.farina **AT** gmail.com>
+* @author   Antonio Farina <ant.farina@gmail.com>
 * @version  $Revision: 1.0 $
+* @license GPL-3.0
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+*
 * @access   public
 */
 

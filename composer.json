@@ -1,9 +1,17 @@
 {
-	"license": "GPL-2.0",
+    "name": "semantic/header",
+    "description": "Single data structure manupulator",
+    "homepage": "https://github.com/antoniofarina/dataStructManipulator",
+    "authors": [{
+      "name": "Antonio Farina",
+      "email": "ant.farina@gmail.com"
+    }],
+
+    "license": "GPL-3.0",
+    "version" : "1.0",
     "require": {
         "phpunit/phpunit": "5.7.*"
     },
-
     "autoload": {
         "psr-4": {"dataStructureManipulator\\": "dataStructureManipulator/"}
     }
