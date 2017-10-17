@@ -15,10 +15,8 @@ namespace dataStructureManipulator;
 class dataStructureManipulator {
 
   /**
-  * A summary informing the user what the associated element does.
+  * Flat a nested array of integers (or data that can be traced back to integers)
   *
-  * A *description*, that can span multiple lines, to go _in-depth_ into the details of this element
-  * and to provide some background information or textual references.
   *
   * @param array $inputArray. The function expect an (also nested) array of integers
   * valid inputs are
