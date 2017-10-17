@@ -43,7 +43,7 @@ class dataStructureManipulatorTest extends \PHPUnit_Framework_TestCase
     *
     * @return void
     */
-    public function testFlatIntegerArrayReturnsFlattedArray()
+    public function testFlatIntegerArray_IntegerNestedArray()
     {
         $originalInput = array(1,4,5,array(4,5,6),456,4,2,array(34,5,array(67)));
         $expectedResult = array(1,4,5,4,5,6,456,4,2,34,5,67);
@@ -58,7 +58,7 @@ class dataStructureManipulatorTest extends \PHPUnit_Framework_TestCase
     *
     * @return void
     */
-    public function testFlatIntegerArrayOnEmptyInnerArray(){
+    public function testFlatIntegerArray_EmptyInnerArray(){
         $originalInput=array(1,4,5,array(),456,4,2,array(34,5,6));
         $expectedResult = array(1,4,5,456,4,2,34,5,6);
         $this->__assertEqual($originalInput,$expectedResult);
@@ -73,7 +73,7 @@ class dataStructureManipulatorTest extends \PHPUnit_Framework_TestCase
     *
     * @return void
     */
-    public function testFlatIntegerArrayOnNullInnerArray(){
+    public function testFlatIntegerArray_NullInnerArray(){
         $originalInput=array(1,4,5,array(null),456,4,2,array(34,5,6));
         $expectedResult = array(1,4,5,456,4,2,34,5,6);
         $this->__assertEqual($originalInput,$expectedResult);
@@ -89,7 +89,7 @@ class dataStructureManipulatorTest extends \PHPUnit_Framework_TestCase
     *
     * @return void
     */
-    public function testFlatIntegerArrayOnNonNumericArgument () {
+    public function testFlatIntegerArray_NonNumericInput () {
         $originalInput = array(1,4,5,array(4,5,6),'string',4,2,array(34,5,array(67)));
         $this->expectException(\RuntimeException::class);
         dataStructureManipulator::flatIntegerArray($originalInput,$flatArrayResult);
@@ -104,7 +104,7 @@ class dataStructureManipulatorTest extends \PHPUnit_Framework_TestCase
     *
     * @return void
     */
-    public function testFlatIntegerArrayOnNonArrayInput () {
+    public function testFlatIntegerArray_NonArrayInput () {
         $originalInput = 1;
         $this->expectException(\RuntimeException::class);
         dataStructureManipulator::flatIntegerArray($originalInput,$flatArrayResult);
