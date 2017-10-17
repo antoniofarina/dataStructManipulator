@@ -42,6 +42,12 @@ class dataStructureManipulatorTest extends \PHPUnit_Framework_TestCase
         dataStructureManipulator::flatIntegerArray($originalInput,$flatArrayResult);
     }
 
+    public function testFlatIntegerArrayOnNonArrayInput () {
+        $originalInput = 1;
+        $this->expectException(\RuntimeException::class);
+        dataStructureManipulator::flatIntegerArray($originalInput,$flatArrayResult);
+    }
+
 
     public function testFlatIntegerArrayOnNumericStringArgument () {
         $originalInput = array(1,4,5,array(4,5,6),'1234',4,2,array(34,5,array(67)));
