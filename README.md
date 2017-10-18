@@ -5,7 +5,7 @@ This package contains a very simple and basic example of class for the data stru
 Install
 --------
 
- - clone this repository Repository
+ - Clone this repository 
  - install Composer (https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
  - type `composer install`
 
